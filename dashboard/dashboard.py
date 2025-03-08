@@ -4,18 +4,18 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import os
 
-# load dataset
+# Load dataset yang diperlukan
 base_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))  
 data_path = os.path.join(base_path, "data")
 
-# path lengkap ke file CSV
+# Atur path ke file CSV
 path_day = os.path.join(data_path, "day.csv")
 path_hour = os.path.join(data_path, "hour.csv")
 
 day_df = pd.read_csv(path_day)
 hour_df = pd.read_csv(path_hour)
 
-# Sidebar untuk interaktif
+# Sidebar
 st.sidebar.title("Data Pembuat 🧑🏻‍💻")
 st.sidebar.write("**Nama:** Muhammad Daffa Eka Pramudita")
 st.sidebar.write("**Email:** mdaffa.ekapram@gmail.com")
